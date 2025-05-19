@@ -1,29 +1,25 @@
-# 1.Introduction
-This registration method combines **watershed-based pseudo-color enhancement**  `code name ="colormap_all"`, **connected component separation**  `code name = "segement_all"`, **B-spline deformation**  `code name = "Bspline_all"`, and **maximization of the normalized cross-correlation coefficient**  `code name = "registration_all"`. It has achieved certain improvements in terms of registration speed and timeliness, and has shown good results on our dataset.
+[toc]
 
----
+# 1.Introduction
 
 **Software Version**：
 MATLAB R2022a
 Spyder(Python 3.11)
 
 ----------------------
-**Data Structure**
+**File Structure**
 **For initial segmentation**：
-dicom_png_segement.py
+**`dicom_png_segement.py`**
  **Registration**:
- colormap-all.m 
- segement_all.m
- Bspline-all.m
- registration-all.m
+ **`colormap-all.m`** : watershed-based pseudo-color enhancement
+ **`segement_all.m`** : connected component separation
+ **`Bspline-all.m`** : B-spline deformation
+ **`registration-all.m`** : maximization of the normalized cross-correlation coefficient
  **Conduct metric testing**:
- Dice.m
- SSIM.m
+ **`Dice.m`**
+ **`SSIM.m`**
  
- 
-
-[toc]
-
+ ----------------------
 
 # 2.About the code
 ## 2.1 Functional code
